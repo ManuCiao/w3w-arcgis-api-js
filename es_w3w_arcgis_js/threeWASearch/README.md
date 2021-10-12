@@ -32,5 +32,5 @@ To run the project type on the command line `npm run start`
 
 ## Extra
 A screenshot of how the app should look like:
-![What3words Convert To 3 words](./images/convertTo3wa.png)
+![What3words Search 3 word address](./images/threeWASearch.png)
 

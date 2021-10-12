@@ -4,11 +4,8 @@ import * as locator from "@arcgis/core/rest/locator";
 import Graphic from "@arcgis/core/Graphic";
 import esriRequest from "@arcgis/core/request";
 
-
-console.log(process.env.YOUR_W3W_EMAIL_ADDRESS); 
 // Set up a locator task using the what3words Locator
-
-const w3wLocator = esriRequest(
+esriRequest(
   // First get the token for the what3words Locator
   "https://arcgis.what3words.com/v2/arcgis/tokens", {
     method: "get",
@@ -89,6 +86,7 @@ const w3wLocator = esriRequest(
   //     }
   //   }]
   // }
+  
   const params = {
     addresses: [{
         OBJECTID: 1,

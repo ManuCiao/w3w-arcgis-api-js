@@ -7,8 +7,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: {
         index: [
-            "./src/batchGeocode.js",
-            "./src/batchGeocode.css"
+            "./src/threeWASearch.js",
+            "./src/threeWASearch.css"
         ]
     },
     node: false,
