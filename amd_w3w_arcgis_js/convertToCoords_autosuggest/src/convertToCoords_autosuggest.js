@@ -77,8 +77,8 @@ require([
         btnGroup.appendChild(suggestItemError);
       }
 
-      function reserveGeocode() {
-        // Execute a reverse geocode using the what3words Locator
+      function suggestLocations() {
+        // Execute a suggest locations using the what3words Locator
         const params = {
           text: searchInput.value
         };
@@ -104,9 +104,9 @@ require([
 
       searchInput.addEventListener("keyup", (event) => {
         clearSuggestBtnGroupPopup();
-        reserveGeocode();
+        suggestLocations();
         // Number 13 is the "Enter" key on the keyboard
-        if (event.keyCode === 13) {
+        if (event.key === 13) {
           event.preventDefault();
           // Trigger the covert To Coordinate button element with a click
           c2cButton.click();
